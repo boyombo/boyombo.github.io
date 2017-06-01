@@ -40,37 +40,46 @@ Python doesn't understand why you want to subtract one string from another. But 
 
 Let us try a few more expressions and operations
 
+```
 >>> 2 * 3
 6
 >>> "name" * 2
 "namename"
+```
 
 "*" is the multiplication operator. Multiplying 2 numbers is quite what we are used to, but multiplying a string (like "name") by a number is like adding the string to itself over and over again. What do you think will happen when you multiply a string with a fractional number?
 
+```
 >>> "name" * 1.5
 TypeError: can't multiply sequence by non-int of type 'float'
+```
 
 Python doesn't understand what you mean (and neither do I).
 
 Let us look at the kinds of division.
 
+```
 >>> 10/3
 3.3333
 >>> 9/3
 3.0
+```
 
 "/" is the division operator, you can use "//" if you want to get rid of the decimal part of the result
 
+```python
 >>> 10//3
 3
+```
 
 But if you are only interested in the remainder of a division, you use the "%" (modulo) operator.
 
+```python
 >>> 13 % 3
 1
 >>>15 % 3
 0
-
+```
 
 Comparison
 ----------
