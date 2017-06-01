@@ -7,8 +7,10 @@ Today we will learn about expressions. I cannot think of a suitable definition f
 
 Expressions can generally be evaluated by the python interpreter into something. If you type
 
-```>>> 1 + 1
-2```
+```
+>>> 1 + 1
+2
+```
 
 python will give you the answer 2.
 
