@@ -2,12 +2,14 @@ Expressions
 ===========
 
 Today we will learn about expressions. I cannot think of a suitable definition for expressions but I will give examples.
+
 ```
 1 + 1
 ```
+
 Expressions can generally be evaluated by the python interpreter into something. If you type
 
-```
+```python
 >>> 1 + 1
 2
 ```
@@ -15,13 +17,16 @@ Expressions can generally be evaluated by the python interpreter into something.
 python will give you the answer 2.
 
 Let us break down the expression into component parts now. Taking the expression
-```
+
+```python
 1 + 1
 ```
+
 You can see there are 3 parts, "1", "+" and "1".
 "+" is the operator, it is the one that determines what happens to the other components of the expression, while "1" and the other "1" are called operands.
 "+" is the addition operator, or as we all know it, the plus. Let us try some expressions on our shell
-```
+
+```python
 >>> 2 + 5
 7
 >>> "a" + "b"
@@ -31,16 +36,17 @@ You can see there are 3 parts, "1", "+" and "1".
 >>> "a" - "b"
 TypeError: unsupported operand type(s) for -: 'str' and 'str'
 ```
+
 Python doesn't understand why you want to subtract one string from another. But when you try to add two strings it simply "concatenates" them, meaning it puts the first string and the second one side by side.
 
-```
+```python
 >>> "a" + "b"
 >>> "ab"
 ```
 
 Let us try a few more expressions and operations
 
-```
+```python
 >>> 2 * 3
 6
 >>> "name" * 2
@@ -49,7 +55,7 @@ Let us try a few more expressions and operations
 
 "*" is the multiplication operator. Multiplying 2 numbers is quite what we are used to, but multiplying a string (like "name") by a number is like adding the string to itself over and over again. What do you think will happen when you multiply a string with a fractional number?
 
-```
+```python
 >>> "name" * 1.5
 TypeError: can't multiply sequence by non-int of type 'float'
 ```
@@ -58,7 +64,7 @@ Python doesn't understand what you mean (and neither do I).
 
 Let us look at the kinds of division.
 
-```
+```python
 >>> 10/3
 3.3333
 >>> 9/3
@@ -77,7 +83,7 @@ But if you are only interested in the remainder of a division, you use the "%" (
 ```python
 >>> 13 % 3
 1
->>>15 % 3
+>>> 15 % 3
 0
 ```
 
@@ -86,8 +92,8 @@ Comparison
 
 Some operators are used for comparing different operands, examples of these are 
 
-">" or greater than
-"<" or less than
+`>` or greater than
+`<` or less than
 "==" or equal to
 "<=" or less than or equal to
 ">=" greater than or equal to
