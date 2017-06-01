@@ -92,12 +92,12 @@ Comparison
 
 Some operators are used for comparing different operands, examples of these are 
 
-`>` or greater than
-`<` or less than
-"==" or equal to
-"<=" or less than or equal to
-">=" greater than or equal to
-"!=" not equal to
+    `>` or greater than
+    `<` or less than
+    "==" or equal to
+    "<=" or less than or equal to
+    ">=" greater than or equal to
+    "!=" not equal to
 
 These expressions return either a True or False value. Note that the 'T' and 'F' are capitalized, and remember that python is case-sensitive. T and t are not at all the same thing.
 Let us try some comparison expressions or operations.
