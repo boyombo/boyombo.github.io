@@ -1,230 +1,236 @@
-Expressions
-===========
+Selling python
+==============
 
-Today we will learn about expressions. I cannot think of a suitable definition for expressions but I will give examples.
+Python is my goto language for development because of a simple reason. It has a very simple and small syntax (different commands you can use) and yet can do really awesome thing. Unlike most languages I have used in the past, and some I still use today, with python I hardly spend any time thinking of the syntax of the language or how it will behave in certain circumstances. I spend most of my time thinking of the problem I want to solve and how to model it in ways that make sense, trusting that python will do the rest.
 
-```
-1 + 1
-```
+One of the most important points to the people who maintain the language is clarity. You read code much more than you write it, so it makes sense to optimize for readability of your code. You need to keep that in mind when programming in any language, and especially in python.
 
-Expressions can generally be evaluated by the python interpreter into something. If you type
-
-```python
->>> 1 + 1
-2
-```
-
-python will give you the answer 2.
-
-Let us break down the expression into component parts now. Taking the expression
-
-```python
-1 + 1
-```
-
-You can see there are 3 parts, "1", "+" and "1".
-"+" is the operator, it is the one that determines what happens to the other components of the expression, while "1" and the other "1" are called operands.
-"+" is the addition operator, or as we all know it, the plus. Let us try some expressions on our shell
-
-```python
->>> 2 + 5
-7
->>> "a" + "b"
-"ab"
->>> 2 - 5
--3
->>> "a" - "b"
-TypeError: unsupported operand type(s) for -: 'str' and 'str'
-```
-
-Python doesn't understand why you want to subtract one string from another. But when you try to add two strings it simply "concatenates" them, meaning it puts the first string and the second one side by side.
-
-```python
->>> "a" + "b"
->>> "ab"
-```
-
-Let us try a few more expressions and operations
-
-```python
->>> 2 * 3
-6
->>> "name" * 2
-"namename"
-```
+Some of the notable features of python are:
+    - Elegant syntax that is easy to read
+    - Easy to use and learn
+    - Large library so you can do lots of stuff with it
+    - Interactive shell for experimentation (we will see this very soon)
+    - Runs on just about any operating system (linux, windows, mac and even on mobile)
+    - It is free and open source
+    - High productivity, it helps you write code very quickly
 
-"*" is the multiplication operator. Multiplying 2 numbers is quite what we are used to, but multiplying a string (like "name") by a number is like adding the string to itself over and over again. What do you think will happen when you multiply a string with a fractional number?
 
-```python
->>> "name" * 1.5
-TypeError: can't multiply sequence by non-int of type 'float'
-```
+Installing python
+=================
 
-Python doesn't understand what you mean (and neither do I).
+So we will start by installing a python environment which is tailor-made for learning the language. It is called "Thonny".
+Thonny is an IDE (Integrated Development Environment) which is a big name for the tool you use to write your code, and which helps you make the process as painless as possible.
+Download thonny from [thonny](http://thonny.org) for your operating system.
+You can find instructions for installation here if you need it
 
-Let us look at the kinds of division.
+[for Windows](https://bitbucket.org/plas/thonny/wiki/Windows)
+[for Mac](https://bitbucket.org/plas/thonny/wiki/MacOSX)
+[for Linux](https://bitbucket.org/plas/thonny/wiki/Linux)
 
-```python
->>> 10/3
-3.3333
->>> 9/3
-3.0
-```
+After installing thonny, take a look at the features on [thonny home page](http://thonny.org) for a bit and try it out on your installation.
+Let us walk through them step by step.
 
-"/" is the division operator, you can use "//" if you want to get rid of the decimal part of the result
+1. First open thonny
+    You will notice that it shows something like the figure below
+    [img]
+2. Before you start coding, save the file as "hello.py"
+3. Type `print('Hello world!')`
+4. From the Run menu select "Run current script" or click on the "play" toolbar button, or just press f5.
+5. You will see "Hello world!" printed on the bottom half of the environment.
 
-```python
->>> 10//3
-3
-```
 
-But if you are only interested in the remainder of a division, you use the "%" (modulo) operator.
+The interpreter (not Wole Soyinka)
+==================================
 
-```python
->>> 13 % 3
-1
->>> 15 % 3
-0
-```
+So, python is an interpreted language, meaning each line of code is executed as you type them. 
+The lower part of thonny with a blinking cursor is your interpreter console (where you can type commands that will be interpreted) which we will call the python "shell" from now on.
 
-Comparison
-----------
+type:
 
-Some operators are used for comparing different operands, examples of these are 
+`print("hello world")`
 
-    ">" means greater than
-    "<" means less than
-    "==" means equal to
-    "<=" means less than or equal to
-    ">=" means greater than or equal to
-    "!=" means not equal to
+then press the [enter] key. You should see `hello world` printed after like this
 
-These expressions return either a True or False value. Note that the 'T' and 'F' are capitalized, and remember that python is case-sensitive. T and t are not at all the same thing.
-Let us try some comparison expressions or operations.
+`
+>>> print("hello world")
+hello world
+`
 
-```python
->>> 5 > 1
-True
->>> 5 < 1
-False
->>> x = 5
->>> x == 10
-False
->>> (x * 2) == 10
-True
-```
+Let us try doing some math. Type each line into the shell, press the [enter] key and note the result you get
 
-Let us deconstruct the next one
+>>> 2 + 2
 
-```python
->>> 5 > (2 + 8)
-False
-```
+>>> 10 - 5 + 6
 
-Just like with BODMAS, (2 + 8) will evaluate to 10 and so the expression will simplify to 5 > 10, which is obviously False (hopefully).
-Let us try something even more fancy...
+>>> 2 * 7
 
-```python
->>> 10 > 7 > 3
-True
->>> 10 > 7 < 3
-False
-```
+>>> 5 / 2
 
-So you can chain the expressions which is like saying 10 is greater than 7 which is greater than 3.
+Now let us see how to get help in the shell
 
-To get even more complex combinations of expressions, we have the "and", "or" and "not" operators. Now we can get very expressive with
+>>> help(len)
 
-```python
->>> 10 > 7 and 6 < 9
-True
-```
+Help on built-in function len in module builtins:
 
-Though I would much rather express it like this
+len(obj, /)
+    Return the number of items in a container.
 
-```python
->>> (10 > 7) and (6 < 9)
-True
-```
+You use the python shell to experiment with your code. It is very useful and you will use it more and more often as you go.
 
-So that I don't get confused about the order of evaluation of the expression. When you type this expression in thonny (your trusty editor), press Ctrl + F5 (hold down the Control key while pressing F5) and follow the order of evaluation.
+Note:
+-----
 
-Order of Evaluation
--------------------
+Whenever I write something beginning with `>>>` it means I expect you to type it in the python shell
 
-If you have an expression like this
+The Editor
+==========
 
-```python
->>> 2 + 1 * 5
-```
+The editor is the top pane of thonny where you type your code into a file. Unlike the shell, the things you type into a file and save are not lost if you restart thonny.
 
-What do you get as the result? Will the "2 + 1" be evaluated first? or the "1 * 5"?
-Type it into your python shell to test.
+Note: You need to make a directory where you keep the files of this tutorial, you can name it anything but I will assume it is called pytutorial.
 
-```python
->>> 2 + 1 * 5
-7
-```
 
-So python uses BODMAS rules it seems. In case you cannot remember this rule let me spell it out...
+Data
+====
 
-```
-B(rackets)
-O(f)
-D(ivision)
-M(ultiplication)
-A(ddition)
-S(ubtraction)
+Let us spend some time printing things in the shell to get a grasp of what kinds of data python supports.
+As usuall, when you see `>>>` it means you should type whatever comes after it into the shell and press [enter]
 
-The higher precedents on top.
+>>> 5
+5
 
-In python there are different kinds of brackets. We will meet them in subsequent discussions, but they all sort of have the highest precedence in expressions.
+>>> 2.67
+2.67
 
-Next are powers (Of) something or exponents
+Numbers, python supports both integers and floating point numbers (numbers that have decimal places)
 
-Multiplication and division (and modulo)
+>>> 'Everybody must vote in 2019'
+'Everybody must vote in 2019'
 
-Addition and subtraction
+>>> "Nobody has a voters card"
+'Nobody has a voters card'
 
-Comparisons (<, >, ==, !=, <=, >=)
+In python strings (you can think of them as plain text, like your address or name) are put inside quotes ('' or ""). Single quotes and double quotes are treated alike in python, though you are not allowed to mix them.
 
-Boolean operators (or, and, not)
+>>> "One more bottle'
+SyntaxError: EOL while scanning string literal
 
-This is not comprehensive but should be ok for us now. As for me, instead of memorizing the operator precedences, I just use a bracket to indicate what I want.
+This will give you a "SyntaxError". It is an error to tell you that python does not understand what you just typed. Luckily, thonny will let you know when you are making such mistakes.
+One nice thing you can do with double and single quotes is when you want to write something like this:
 
-Example
--------
+>>> "That's my name"
+"That's my name"
 
-Try out this example in your shell
+Because the single quote is between double quotes, python understands what you are trying to do.
 
-```
->>> english = 60
->>> math = 70
->>> avg = (english + math)/2
->>> print('Average is', avg)
-Average is 65.0
-```
+How about mixing numbers and strings?
 
-Now type it into the thonny editor pane
+>>> "I am 10 years old"
+"I am 10 years old"
 
-```
-english = 60
-math = 70
+Here the number 10 is treated as a string because it is inside quotes.
 
-avg = (english + math)/2
-print('Average is', avg)
-```
+>>> '10' + '10'
+'1010'
 
-Save the file as avg.py
-Then run it in thonny by pressing the F5 key
+You see that python does not take them as numbers.
 
+Let us try and be sly...
 
-Control Flow
-============
+>>> '10' + 10
+TypeError: unsupported operand type(s) for +: 'int' and 'str'
 
-There are basically 2 fundamental ways in which you control what happens in your programs:
+We get another kind of error called a "TypeError". It means you are trying to do something with data types that are not quite correct.
+You cannot add a string to a number. Just like saying you want to add some money to your name, #kolewerk
 
-- Decisions
-- Repititions
+But python has a technique if you want to really really mix strings with numbers, it is called the 'format' method (don't worry we will discuss what methods are later)
+Let us try a small exercise...
 
-With these 2 things in your belt, you are able to tackle a lot of simple tasks
+>>> age = 10
+>>> name = 'bayo'
+>>> '{} is {} years old'.format(name, age)
+'bayo is 10 years old'
+
+You see that we use format to tell python to replace some placeholders {} with real values for name and age.
+
+There is another way we can achieve the same end without using format, but it is not quite as elegant. For full disclosure, here it is:
+
+>>> age = 10
+>>> name = 'bayo'
+>>> name + ' is ' + str(age) + ' years old'
+'bayo is 10 years old'
+
+Here we had to use `str` function to convert the number to a string, then we just added (actually called concatenated) the strings together.
+
+The usual way to print data to the screen is by using the `print` function
+
+>>> name = 'bayo'
+>>> print(name)
+'bayo'
+
+Variables
+=========
+
+You will have noticed that we have just been printing data to the screen, that is not how all of programming is. It would have been nice though, but not very useful.
+A lot of the time, you want to do something with the data, sometimes you want to do a lot with the data.
+In this case you will want to store the data somewhere in memory. Trust me you don't want to know where every bit of data you need is stored in memory, what you want is a way to say 'Hey python, give me the data you stored somewhere that I called x', in this case 'x' is a variable.
+So variables are names we give to data stored somewhere in memory.
+
+>>> x = 1
+>>> y = 6
+>>> z = x + y
+
+In this case we have defined 3 variables, x, x and z
+On thonny, select View -> Heap from the menu. You will see a pane showing "ID" and "value". Also make sure you have the Variables pane open (View -> Variables).
+On the variables pane, you will see the name you gave the variable and the location in memory that the variable is stored.
+On the heap pane you will see the address in memory and the value stored in it.
+
+Now you know that variables are simply convenient names you give to pieces of your data, you should keep in mind a couple of simple rules for naming variables:
+
+ - Varible names should start with an alphabet (or underscore)
+ - Variable names can consist of alphabets, numbers or underscores.
+ - Names are case-sensitive. So `name` is not the same as `nAme` which is not the same as `Name`. This is the most important rule because python may simpy assume you are defining two different variables when you actually wanted to refer to the same one.
+
+ Indentation
+ ===========
+
+ Indentation is very important in python. Indentation is whitespace (space, tab, etc...) at the beginning of a line of code. For example let us look at the last code we wrote
+
+>>> x = 1
+>>> y = 6
+>>>  z = x + y
+
+SyntaxError: unexpected indent
+
+Looks very harmless but python will complain about it. All lines that go together must have the same indentation.
+
+Note on indentation:
+    Use four spaces for indentation. This is the official Python language recommendation. Good editors will automatically do this for you. Make sure you use a consistent number of spaces for indentation, otherwise your program will not run or will have unexpected behavior.
+
+Input
+=====
+
+I am getting a little ahead of myself here, but I want us to write a couple of interesting exercises and so here we go...
+
+>>> name = input('Enter your name: ')
+Enter your name: bayo
+>>> name
+bayo
+
+Here you should type this first
+>>> name = input('Enter your name: ')
+
+Then you will see 
+'Enter your name: '
+with the cursor blinking on the next line. This is an indication that it is expecting input from you. Whatever you enter (and press the [enter] key) will be stored as the variable `name`.
+
+So when you type
+>>> name
+on the shell you get whatever you typed in back.
+
+Exercises
+=========
+
+1. Write a program to ask for your name and your friend's name. The the program will print out "[your name] and [your friend's name] are friends"
+
+2. Write a program that will ask for your name and age, then print out "[your name] is [your age] years old"
