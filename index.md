@@ -92,45 +92,60 @@ Comparison
 
 Some operators are used for comparing different operands, examples of these are 
 
-    `>` or greater than
-    `<` or less than
-    "==" or equal to
-    "<=" or less than or equal to
-    ">=" greater than or equal to
-    "!=" not equal to
+    ">" means greater than
+    "<" means less than
+    "==" means equal to
+    "<=" means less than or equal to
+    ">=" means greater than or equal to
+    "!=" means not equal to
 
 These expressions return either a True or False value. Note that the 'T' and 'F' are capitalized, and remember that python is case-sensitive. T and t are not at all the same thing.
 Let us try some comparison expressions or operations.
 
+```python
 >>> 5 > 1
 True
 >>> 5 < 1
 False
+>>> x = 5
+>>> x == 10
+False
+>>> (x * 2) == 10
+True
+```
 
-We can get more complex
+Let us deconstruct the next one
 
+```python
 >>> 5 > (2 + 8)
 False
+```
 
-Just like with BODMAS, (2 + 8) will evaluate to 10 and so the expression will simplify to 5 > 10, which is obviously False.
+Just like with BODMAS, (2 + 8) will evaluate to 10 and so the expression will simplify to 5 > 10, which is obviously False (hopefully).
 Let us try something even more fancy...
 
+```python
 >>> 10 > 7 > 3
 True
 >>> 10 > 7 < 3
 False
+```
 
 So you can chain the expressions which is like saying 10 is greater than 7 which is greater than 3.
 
 To get even more complex combinations of expressions, we have the "and", "or" and "not" operators. Now we can get very expressive with
 
+```python
 >>> 10 > 7 and 6 < 9
 True
+```
 
 Though I would much rather express it like this
 
+```python
 >>> (10 > 7) and (6 < 9)
 True
+```
 
 So that I don't get confused about the order of evaluation of the expression. When you type this expression in thonny (your trusty editor), press Ctrl + F5 (hold down the Control key while pressing F5) and follow the order of evaluation.
 
@@ -139,16 +154,21 @@ Order of Evaluation
 
 If you have an expression like this
 
+```python
 >>> 2 + 1 * 5
+```
 
 What do you get as the result? Will the "2 + 1" be evaluated first? or the "1 * 5"?
 Type it into your python shell to test.
 
+```python
 >>> 2 + 1 * 5
 7
+```
 
 So python uses BODMAS rules it seems. In case you cannot remember this rule let me spell it out...
 
+```
 B(rackets)
 O(f)
 D(ivision)
@@ -177,19 +197,23 @@ Example
 
 Try out this example in your shell
 
+```
 >>> english = 60
 >>> math = 70
 >>> avg = (english + math)/2
 >>> print('Average is', avg)
 Average is 65.0
+```
 
 Now type it into the thonny editor pane
 
+```
 english = 60
 math = 70
 
 avg = (english + math)/2
 print('Average is', avg)
+```
 
 Save the file as avg.py
 Then run it in thonny by pressing the F5 key
