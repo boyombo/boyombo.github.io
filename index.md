@@ -7,8 +7,8 @@ Hi there, I have broken the tutorial into days/chapters, and here they are:
 
 [day2](/day2.md)
 
-[day3]
+day3
 
-[day4]
+day4
 
 I hope you enjoy it
