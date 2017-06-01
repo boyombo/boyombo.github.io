@@ -2,9 +2,9 @@ Expressions
 ===========
 
 Today we will learn about expressions. I cannot think of a suitable definition for expressions but I will give examples.
-
+```
 1 + 1
-
+```
 Expressions can generally be evaluated by the python interpreter into something. If you type
 
 ```
