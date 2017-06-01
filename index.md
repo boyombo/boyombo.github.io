@@ -1,5 +1,10 @@
-Selling python
-==============
+Yet Another Python Tutorial
+===========================
+
+Hi there, I have broken the tutorial into days/chapters, and here they are:
+
+[day1](/day1)
+[day2](/day2)
 
 Python is my goto language for development because of a simple reason. It has a very simple and small syntax (different commands you can use) and yet can do really awesome thing. Unlike most languages I have used in the past, and some I still use today, with python I hardly spend any time thinking of the syntax of the language or how it will behave in certain circumstances. I spend most of my time thinking of the problem I want to solve and how to model it in ways that make sense, trusting that python will do the rest.
 
