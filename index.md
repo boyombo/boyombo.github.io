@@ -32,8 +32,10 @@ Let us walk through them step by step.
 
 1. First open thonny
     You will notice that it shows something like the figure below
+    
     ![Thonny]
     (http://thonny.org/img/screenshot.png)
+
 2. Before you start coding, save the file as "hello.py"
 3. Type `print('Hello world!')`
 4. From the Run menu select "Run current script" or click on the "play" toolbar button, or just press f5.
