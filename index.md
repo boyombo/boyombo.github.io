@@ -47,17 +47,20 @@ The lower part of thonny with a blinking cursor is your interpreter console (whe
 
 type:
 
-`print("hello world")`
+```python
+print("hello world")
+```
 
 then press the [enter] key. You should see `hello world` printed after like this
 
-`
+```python
 >>> print("hello world")
 hello world
-`
+```
 
 Let us try doing some math. Type each line into the shell, press the [enter] key and note the result you get
 
+```python
 >>> 2 + 2
 
 >>> 10 - 5 + 6
@@ -65,22 +68,25 @@ Let us try doing some math. Type each line into the shell, press the [enter] key
 >>> 2 * 7
 
 >>> 5 / 2
+```
 
-Now let us see how to get help in the shell
+Now let us see how to get help in the shell in case we can't remember what a particular keyword does
 
+```python
 >>> help(len)
 
 Help on built-in function len in module builtins:
 
 len(obj, /)
     Return the number of items in a container.
+```
 
 You use the python shell to experiment with your code. It is very useful and you will use it more and more often as you go.
 
 Note:
 -----
 
-Whenever I write something beginning with `>>>` it means I expect you to type it in the python shell
+> Whenever I write something beginning with `>>>` it means I expect you to type it in the python shell
 
 The Editor
 ==========
