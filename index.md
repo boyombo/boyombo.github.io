@@ -15,13 +15,13 @@ Expressions can generally be evaluated by the python interpreter into something.
 python will give you the answer 2.
 
 Let us break down the expression into component parts now. Taking the expression
-
+```
 1 + 1
-
+```
 You can see there are 3 parts, "1", "+" and "1".
 "+" is the operator, it is the one that determines what happens to the other components of the expression, while "1" and the other "1" are called operands.
 "+" is the addition operator, or as we all know it, the plus. Let us try some expressions on our shell
-
+```
 >>> 2 + 5
 7
 >>> "a" + "b"
@@ -30,11 +30,13 @@ You can see there are 3 parts, "1", "+" and "1".
 -3
 >>> "a" - "b"
 TypeError: unsupported operand type(s) for -: 'str' and 'str'
-
+```
 Python doesn't understand why you want to subtract one string from another. But when you try to add two strings it simply "concatenates" them, meaning it puts the first string and the second one side by side.
 
+```
 >>> "a" + "b"
 >>> "ab"
+```
 
 Let us try a few more expressions and operations
 
