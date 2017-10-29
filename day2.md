@@ -53,7 +53,7 @@ Let us try a few more expressions and operations
 "namename"
 ```
 
-"*" is the multiplication operator. Multiplying 2 numbers is quite what we are used to, but multiplying a string (like "name") by a number is like adding the string to itself over and over again. What do you think will happen when you multiply a string with a fractional number?
+"\*" is the multiplication operator. Multiplying 2 numbers is quite what we are used to, but multiplying a string (like "name") by a number is like adding the string to itself over and over again. What do you think will happen when you multiply a string with a fractional number?
 
 ```python
 >>> "name" * 1.5
@@ -90,7 +90,7 @@ But if you are only interested in the remainder of a division, you use the "%" (
 Comparison
 ----------
 
-Some operators are used for comparing different operands, examples of these are 
+Some operators are used for comparing different operands, examples of these are
 
     ">" means greater than
     "<" means less than
