@@ -32,7 +32,7 @@ Let us walk through them step by step.
 
 1. First open thonny
     You will notice that it shows something like the figure below
-    
+
 ![Thonny](http://thonny.org/img/screenshot.png)
 
 2. Before you start coding, save the file as "hello.py"
@@ -44,7 +44,7 @@ Let us walk through them step by step.
 The interpreter (not Wole Soyinka)
 ==================================
 
-So, python is an interpreted language, meaning each line of code is executed as you type them. 
+So, python is an interpreted language, meaning each line of code is executed as you type them.
 The lower part of thonny with a blinking cursor is your interpreter console (where you can type commands that will be interpreted) which we will call the python "shell" from now on.
 
 type:
@@ -196,6 +196,51 @@ The usual way to print data to the screen is by using the `print` function
 'bayo'
 ```
 
+Another interesting data type is the list. The list is more like a handbag, where you keep stuff in. Programmers like to call things like this `collections` or `containers`. There are other kinds of containers but let us see how this one works first.
+
+```python
+>>> items = [1, 3, 4, 8]
+```
+
+Here you see that items is a collection of 4 different things, the numbers, 1, 3, 4 and 8. There are fun things you can do with collections, for instance you can count how many items are contained in them.
+
+```>>> len(items)
+4
+```
+
+Or you can check the position (called index) of items in the list. Imagine you have 4 bottles in a row, the first one is a green bottle, the second a brown bottle, then a transparent bottle and last of all a blue bottle. We can represent them by a list like so...
+
+```>>> bottles = ['green', 'brown', 'transparent', 'blue']
+```
+
+The first bottle can be found by typing
+
+``` bottles[0]
+'green'
+```
+
+The second bottle is
+
+``` bottles[1]
+'brown'
+```
+
+And the fourth bottle is
+
+``` bottles[3]
+'blue'
+```
+
+You will notice that python indexes from 0 instead of 1.
+Normally if you are counting things you start from 1, but python starts from 0. Please take note of this.
+If you try to find bottles[4] (hoping to get the last bottle), you get a shocker instead.
+
+`>>> bottles[4]
+Traceback (most recent call last):
+  File "<pyshell>", line 1, in <module>
+IndexError: list index out of range
+>>>`
+
 Variables
 =========
 
@@ -254,7 +299,7 @@ bayo
 Here you should type this first
 `>>> name = input('Enter your name: ')`
 
-Then you will see 
+Then you will see
 `'Enter your name: '`
 with the cursor blinking on the next line. This is an indication that it is expecting input from you. Whatever you enter (and press the [enter] key) will be stored as the variable `name`.
 

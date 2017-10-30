@@ -175,6 +175,7 @@ D(ivision)
 M(ultiplication)
 A(ddition)
 S(ubtraction)
+```
 
 The higher precedents on top.
 
@@ -225,6 +226,11 @@ Control Flow
 There are basically 2 fundamental ways in which you control what happens in your programs:
 
 - Decisions
-- Repititions
+- Repetitions
 
 With these 2 things in your belt, you are able to tackle a lot of simple tasks
+
+What if?
+--------
+
+The `if` statement is used in python to
