@@ -172,3 +172,6 @@ elif beans == 'Yes' or beans == 'yes' or beans == 'YES':
     print('You like beans')
 else:
     print('No lunch for you!')
+```
+
+We will see some other operators later.

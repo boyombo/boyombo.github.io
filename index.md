@@ -9,6 +9,7 @@ Hi there, I have broken the tutorial into days/chapters, and here they are:
 
 [day3](/day3.md)
 
-day4
+[day4](/day4.md)
+
 
 I hope you enjoy it
