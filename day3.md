@@ -2,14 +2,11 @@ Decisions
 =========
 
 Today we will learn about decision making in python or the `if` statement. Also we will learn more about indentation in python.
-
 We learned in day 1 that python is quite unforgiving with indentation issues, today we see how.
 
 You will be typing into a file named `age.py` in the top-left pane in thonny.
-
 From the menu, select File -> New to create a new file, then File -> Save naming the file age.py.
 It is good practice to save your files in a location you will be able to find later.
-
 Now type the below code into the `age.py` file and save.
 
 ```
