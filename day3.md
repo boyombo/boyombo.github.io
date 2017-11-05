@@ -95,3 +95,60 @@ elif hour < 17:
 else:
     print('Good evening')
 ```
+
+You can have as many `elif` blocks as you like, for instance...
+
+Save this as `elif.py` 
+
+```
+number = 3
+guess = int(input('Choose a number between 1 and 5'))
+if guess == 1:
+    print('Too low!')
+elif guess == 2:
+    print('A little higher')
+elif guess == 3:
+    print('Correct!')
+elif guess == 4:
+    print('A little lower')
+elif guess == 5:
+    print('Too high!')
+else:
+    print('The number is not between 1 and 5')
+```
+
+#### Operators
+
+In order to compare things in python you use operators. There are a few boolean operators (operators that result in True or False)
+
+`==, !=, <, >, <=, >=`
+
+`x == 5` returns True if x is equal to 5 and False if not. 
+`x != 5` returns True if x is not equal to 5 and False if x is equal to 5. 
+`x > 10` returns True if x is greater than 10 and False if it is less.  
+`x < 15` returns True if x is less than 15 and False if x is greater. 
+`x <= 4` returns True if x is for example 4, 3, 2 or 1 but False if x is 6 or 7. 
+`x >= 7` returns True if x is either 7 or greater than 7, and False otherwise. 
+
+#### More blocks
+
+A block can contain other blocks. It is called *nesting*. 
+Save this example as `nesting.py`
+
+```
+number = int(input('Enter a number between 1 and 5:'))
+if number >= 1:
+    if number <= 5:
+        print('You entered', number);
+```
+
+You can replace this code by introducing another operator called `and`. 
+Save this as `and.py`
+
+```
+number = int(input('Enter a number between 1 and 5:'))
+if number >= 1 and number <= 5:
+    print('You entered', number)
+```
+
+Which is easier to read than the first. 
