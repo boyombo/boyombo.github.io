@@ -117,18 +117,18 @@ else:
     print('The number is not between 1 and 5')
 ```
 
-#### Operators
+#### Comparison Operators
 
 In order to compare things in python you use operators. There are a few boolean operators (operators that result in True or False)
 
 `==, !=, <, >, <=, >=`
 
-`x == 5` returns True if x is equal to 5 and False if not. 
-`x != 5` returns True if x is not equal to 5 and False if x is equal to 5. 
+`x == 5` returns True if x is equal to 5 and False if not.  
+`x != 5` returns True if x is not equal to 5 and False if x is equal to 5.  
 `x > 10` returns True if x is greater than 10 and False if it is less.  
-`x < 15` returns True if x is less than 15 and False if x is greater. 
-`x <= 4` returns True if x is for example 4, 3, 2 or 1 but False if x is 6 or 7. 
-`x >= 7` returns True if x is either 7 or greater than 7, and False otherwise. 
+`x < 15` returns True if x is less than 15 and False if x is greater.  
+`x <= 4` returns True if x is for example 4, 3, 2 or 1 but False if x is 6 or 7.  
+`x >= 7` returns True if x is either 7 or greater than 7, and False otherwise.  
 
 #### More blocks
 
@@ -152,3 +152,23 @@ if number >= 1 and number <= 5:
 ```
 
 Which is easier to read than the first. 
+
+#### More Operators
+
+Like we said earlier, operators can be used for comparison. You can combine different comparisons with logical operators.
+
+`and` returns True if *all* the comparisons are true else it returns False.  
+`or` returns True if *any* of the comparisons are true else it returns False.  
+`not` returns True if the expression is False, and it returns False if the expression is True.  
+
+Here are some examples. Save them in logic.py
+
+```
+rice = input('Do you like rice? ')
+beans = input('Do you like beans? ')
+if rice == 'Yes' or rice == 'yes' or rice == 'YES':
+    print('You like rice')
+elif beans == 'Yes' or beans == 'yes' or beans == 'YES':
+    print('You like beans')
+else:
+    print('No lunch for you!')
