@@ -19,7 +19,8 @@ else:
     print("You are an adult now, congratulations!")
 ```
 
-To run the program, select Run -> Run current script menu. Or you can just press the F5 key. The results will appear in the *shell* pane of thonny, and you can see the variables in the *variables* pane as well.
+To run the program, select Run -> Run current script menu. Or you can just press the F5 key. 
+The results will appear in the *shell* pane of thonny, and you can see the variables in the *variables* pane as well.
 
 Run the program a few times, entering different inputs each time to see how the results will change.
 
@@ -56,8 +57,10 @@ True
 False
 ```
 
-The `if` statement is a little richer, it can contain an optional `else` statement.
-Let us say we have 2 variables `x` and `y`.
+###### else
+
+The `if` statement is a little richer, it can contain an optional `else` statement. 
+Let us say we have 2 variables `x` and `y`. 
 Instead of
 
 ```
@@ -75,3 +78,8 @@ You can do
     else:
        print(x, 'is not greater than', y)
 ```
+
+###### elif
+
+You can get a little more fancy with `if` statements with the `elif` clause.
+`elif` is short for `else-if`
