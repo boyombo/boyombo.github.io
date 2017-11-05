@@ -81,5 +81,5 @@ You can do
 
 ###### elif
 
-You can get a little more fancy with `if` statements with the `elif` clause.
+You can get a little more fancy with `if` statements with the `elif` clause. 
 `elif` is short for `else-if`
