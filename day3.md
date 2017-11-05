@@ -83,3 +83,15 @@ You can do
 
 You can get a little more fancy with `if` statements with the `elif` clause. 
 `elif` is short for `else-if`
+
+Write out this program in the file `whatif.py`
+
+```
+hour = int(input('What hour is it: '))
+if hour < 12:
+    print('Good morning')
+elif hour < 17:
+    print('Good afternoon')
+else:
+    print('Good evening')
+```
