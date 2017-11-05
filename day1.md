@@ -262,9 +262,9 @@ On the heap pane you will see the address in memory and the value stored in it.
 
 Now you know that variables are simply convenient names you give to pieces of your data, you should keep in mind a couple of simple rules for naming variables:
 
- - Varible names should start with an alphabet (or underscore)
+ - Variable names should start with an alphabet (or underscore)
  - Variable names can consist of alphabets, numbers or underscores.
- - Names are case-sensitive. So `name` is not the same as `nAme` which is not the same as `Name`. This is the most important rule because python may simpy assume you are defining two different variables when you actually wanted to refer to the same one.
+ - Names are case-sensitive. So `name` is not the same as `nAme` which is not the same as `Name`. This is the most important rule because python may simply assume you are defining two different variables when you actually wanted to refer to the same one.
 
  Indentation
  ===========
