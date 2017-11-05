@@ -1,2 +1,3 @@
 theme: jekyll-theme-slate
 title: Yet another python tutorial
+gfm: true

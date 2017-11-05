@@ -44,7 +44,7 @@ The `if` statement has the following structure:
 - The condition must be something that can evaluate to True or False
 - The body can be one or more lines of code with consistent indentation (use 4 spaces please).
 
-True and False in python are called boolean values. When you write an expression like x > y, the result is a boolean value which means it is either True or False.
+True and False in python are called boolean values. When you write an expression like x > y, the result is a boolean value which means it is either True or False. 
 Note that in python True and False always start with a capital "T" and a capital "F".
 
 ###### Examples of boolean expressions
