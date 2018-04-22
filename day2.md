@@ -218,19 +218,3 @@ print('Average is', avg)
 
 Save the file as avg.py
 Then run it in thonny by pressing the F5 key
-
-
-Control Flow
-============
-
-There are basically 2 fundamental ways in which you control what happens in your programs:
-
-- Decisions
-- Repetitions
-
-With these 2 things in your belt, you are able to tackle a lot of simple tasks
-
-What if?
---------
-
-The `if` statement is used in python to

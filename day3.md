@@ -1,4 +1,15 @@
-# What if?
+Control Flow
+============
+
+There are basically 2 fundamental ways in which you control what happens in your programs:
+
+- Decisions
+- Repetitions
+
+With these 2 things in your belt, you are able to tackle a lot of simple tasks
+
+What if?
+--------
 
 Today we will learn about decision making in python or the `if` statement. Also we will learn more about indentation in python.
 We learned in day 1 that python is quite unforgiving with indentation issues, today we see how.
@@ -10,7 +21,7 @@ Now type the below code into the `age.py` file and save.
 
 ```
 birthYear = int(input('Enter the year you were born: '))
-currentYear = 2017
+currentYear = 2018
 age = currentYear - birthYear
 print('You are', age, 'years old')
 if age < 18:
@@ -27,7 +38,7 @@ Run the program a few times, entering different inputs each time to see how the 
 #### Explanation
 
 - First you ask the user of the program to enter the year they were born
-- Then you subtract the year from 2017 to get the age of the user (assuming we are still in 2017)
+- Then you subtract the year from 2018 to get the age of the user (assuming we are still in 2018)
 - We then print 'You are x years old' (replace x with the age of the user)
 - Now we get into the decision statement. If the age is less than 18, we give good advice, but if not we give bad advice :)
 
