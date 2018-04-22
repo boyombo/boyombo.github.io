@@ -123,4 +123,11 @@ We learn 2 things here
 2. Variables defined in an "inner" scope override those
 3. Variables defined in an "inner" scope are not available in an "outer" scope
 
-At this point it may be relevant to discuss what a scope is.
+/****** NOT CLEAR ENOUGH
+At this point it may be relevant to discuss what a scope is. First in "akara and yam" terms.
+
+When you ask your little cousin to buy akara you call the `buy_akara` function, passing in the money.
+In the body of the function we have money. But things outside the function can affect the function as well, like whether or not it is raining or the price of akara (no point sending him with N50 when akara costs N100).
+
+However, what you have inside the function is not visible outside of it.
+*********/
