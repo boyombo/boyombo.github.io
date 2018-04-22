@@ -255,7 +255,7 @@ So variables are names we give to data stored somewhere in memory.
 >>> z = x + y
 ```
 
-In this case we have defined 3 variables, x, x and z
+In this case we have defined 3 variables, x, y and z
 On thonny, select View -> Heap from the menu. You will see a pane showing "ID" and "value". Also make sure you have the Variables pane open (View -> Variables).
 On the variables pane, you will see the name you gave the variable and the location in memory that the variable is stored.
 On the heap pane you will see the address in memory and the value stored in it.
