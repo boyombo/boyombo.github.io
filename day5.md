@@ -49,7 +49,7 @@ The first line (with the `def`) is called the header, while the rest is called t
 
 # Return values
 
-Though return values are not compulsory for functions but they are pretty useful, like when you "send" your younger brother or sister to go buy akara and yam. The input is the money and the output "akara and yam" (or cock and bull excuses how the money got lost etc...).
+Though return values are not compulsory for functions but they are pretty useful, like when you `send` your younger brother or sister to go buy akara and yam. The input is the money and the output "akara and yam" (or cock and bull excuses how the money got lost etc...).
 Let us try another function
 
 ```
