@@ -131,3 +131,53 @@ In the body of the function we have money. But things outside the function can a
 
 However, what you have inside the function is not visible outside of it.
 *********/
+
+# Pure functions
+
+Pure functions are functions that don't have "side-effects". That means you put in an input and get an output without anything else changing around it. This gives us some level of predictability when writing code, so you are not afraid that your code will do all sorts of things you do not expect that will make you stay up all night pulling at your hair.
+Let us look at an example.
+
+```
+row1 = [1, 2, 3, 4,]
+row2 = [5, 6, 7, 8]
+
+def pure_merge(a, b):
+    return a + b
+
+def anyhow_merge(a, b):
+    for item in b:
+        a.append(item)
+    return a
+
+```
+
+Now let's run them and see
+
+```
+>>> merge(row1, row2)
+[1, 3, 5, 7, 2, 4, 6, 8]
+>>> %Run one.py
+>>> pure_merge(row1, row2)
+[1, 2, 3, 4, 5, 6, 7, 8]
+>>> row1
+[1, 2, 3, 4]
+>>> row2
+[5, 6, 7, 8]
+>>> anyhow_merge(row1, row2)
+[1, 2, 3, 4, 5, 6, 7, 8]
+>>> row1
+[1, 2, 3, 4, 5, 6, 7, 8]
+>>> row2
+[5, 6, 7, 8]
+>>> 
+```
+
+You notice that after running the `anyhow_merge` function, `row1` is changed.
+This way it is difficult to predict how things will be at anytime in your program.
+So it is usually good practice to use pure functions where possible, so you don't have to juggle too many things on your mind at once.
+
+# Functions as arguments (intermediate)
+
+You can also pass a function as an argument, this gives us a lot of super powers if we know what we are doing.
+
+# Closures (intermediate)
