@@ -11,9 +11,11 @@ Hi there, I have broken the tutorial into days/chapters, and here they are:
 
 [day4](/day4.md)
 
-[day5](/day5.md)
+[Functions](/day5.md)
 
-[day6](/day6.md)
+[Classes](/day6.md)
+
+[Exceptions](/day6.md)
 
 
 I hope you enjoy it
