@@ -181,3 +181,5 @@ So it is usually good practice to use pure functions where possible, so you don'
 You can also pass a function as an argument, this gives us a lot of super powers if we know what we are doing.
 
 # Closures (intermediate)
+
+[Next](/classes)
