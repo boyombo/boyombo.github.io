@@ -315,4 +315,4 @@ Exercises
 2. Write a program that will ask for your name and age, then print out "`your name` is `your age` years old"
 
 
->> [Expressions](/day2)
+| [Expressions](/day2) |
