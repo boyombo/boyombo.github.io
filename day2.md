@@ -87,10 +87,36 @@ But if you are only interested in the remainder of a division, you use the "%" (
 0
 ```
 
+Assignment
+----------
+
+There is the `=` operator which means assignment. Basically you are "assigning" a value to a variable
+
+```python
+>>> age = 12
+```
+
+You an also combine assignment with some other arithmetical operators (+, -, *, /)
+
+```python
+>>> age = 5
+>>> age
+5
+>>> age += 3
+>>> age
+8
+>>> age -= 1
+>>> age
+7
+```
+
+A frequent beginner's mistake is to confuse assignment with the equals comparison (==).
+Take note!
+
 Comparison
 ----------
 
-Some operators are used for comparing different operands, examples of these are
+Some operators are used for comparing different values, examples of these are
 
     ">" means greater than
     "<" means less than
