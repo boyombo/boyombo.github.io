@@ -182,4 +182,4 @@ You can also pass a function as an argument, this gives us a lot of super powers
 
 # Closures (intermediate)
 
-[Next](/classes)
+< [Control Flow](/day4) | [Classes](/day6) >

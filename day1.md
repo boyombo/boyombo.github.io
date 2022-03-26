@@ -313,3 +313,6 @@ Exercises
 1. Write a program to ask for your name and your friend's name. The the program will print out "`your name` and `your friend's name` are friends"
 
 2. Write a program that will ask for your name and age, then print out "`your name` is `your age` years old"
+
+
+>> [Expressions](/day2)

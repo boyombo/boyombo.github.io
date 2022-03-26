@@ -218,3 +218,5 @@ print('Average is', avg)
 
 Save the file as avg.py
 Then run it in thonny by pressing the F5 key
+
+< [Start](/page1) | [Control Flow](/page3) >

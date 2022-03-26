@@ -97,3 +97,5 @@ And you can use the `continue` statement to leave off the remaining statements i
 
 With decisions (if-elif-else) statements and looping statements you are basically set to program in python.  
 The rest are simply ways to make your life as a python programmer easier.
+
+[<< Control Flow](/page3) | [Functions >>](/page5)
