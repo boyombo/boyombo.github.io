@@ -307,6 +307,34 @@ So when you type
 `>>> name`
 on the shell you get whatever you typed in back.
 
+Output
+======
+
+The easiest way to output data in python is with the `print` statement.
+
+```python
+>>> print('hello')
+hello
+```
+
+Let us say you want to print something inside a variable in some text.
+
+```python
+>>> name = 'bayo'
+>>> print('My name is name')
+'My name is name'
+>>> print('My name is', name)
+'My name is bayo'
+>>> print('My name is %s'.format(name))
+'My name is bayo'
+>>> print(f'My name is {name}')
+'My name is bayo'
+```
+
+Personally I prefer the last option where you put an 'f' as  a prefix to the string.
+They are called f-strings (only work on python3 not older versions of python)
+
+
 Exercises
 =========
 
