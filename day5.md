@@ -176,10 +176,97 @@ You notice that after running the `anyhow_merge` function, `row1` is changed.
 This way it is difficult to predict how things will be at anytime in your program.
 So it is usually good practice to use pure functions where possible, so you don't have to juggle too many things on your mind at once.
 
-# Functions as arguments (intermediate)
+Functions are just objects
+--------------------------
 
-You can also pass a function as an argument, this gives us a lot of super powers if we know what we are doing.
+In python, functions are just objects. They can be passed into other functions are arguments and can be returned from another function.
 
-# Closures (intermediate)
+# Functions as arguments 
 
+```python
+def morning(name):
+    return f"Good morning {name}"
+
+def evening(name):
+    return f"Good evening {name}"
+
+def greet(greeter_func):
+    return greeter_func("Bayo")
+>>>
+>>> greet(morning)
+'Good morning Bayo'
+>>> greet(evening)
+'Good evening Bayo'
+>>> 
+```
+
+Here we see the functions morning and evening passed into the greet function.
+
+# Inner functions
+
+It’s possible to define functions inside other functions. Such functions are called inner functions. 
+
+```python
+def parent():
+    print("Printing from the parent() function")
+
+    def first_child():
+        print("Printing from the first_child() function")
+
+    def second_child():
+        print("Printing from the second_child() function")
+
+    second_child()
+    first_child()
+```
+
+When you call the parent() function, it will print the first line, construct the first_child and second_child functions, then call them.
+Note that the child functions are not defined till the inner function is called.
+Also the first_child() and second_child() functions are within the scope of the parent() function, so they are not available in the global scope.
+
+# Returning functions from functions
+
+Python also allows you to use functions as return values. 
+
+```python
+def parent(num):
+    def first_child():
+        return "Hi, I am Nomnom"
+
+    def second_child():
+        return "Call me Rara"
+
+    if num == 1:
+        return first_child
+    else:
+        return second_child
+>>>
+>>> func = parent(1)
+>>> func()
+'Hi, I am Nomnom'
+>>> func = parent(2)
+>>> func()
+'Call me Rara'
+>>> 
+```
+
+# Decorators
+
+A decorator is basically a function that adds features to some other function/method. It is called a "higher-order function"
+A normal function would act on data while a decorator manipulates functions.
+Let us see a simple example
+
+```python
+def parental_control(func):
+    def watch_movie(*args, **kwargs):
+        if args[0] < 18:
+            func(*args, **kwargs)
+        else:
+            print(f'Sorry you cannot watch a movie rated {args[0]}')
+    return watch_movie
+
+@parental_control
+def movie(age):
+    print(f'watching movie with pg age {age}')
+```
 < [Control Flow](/day4) | [Classes](/day6) >
